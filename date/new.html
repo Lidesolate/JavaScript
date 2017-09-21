@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数码时钟</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 0px;
+			background: #1d0045;
+			font-size: 50px;
+			color: #fff;
+		}
+		#div1{
+			width: 750px;
+			height: 200px;
+			margin: 15% auto 0 auto;
+		}
+		#div1 img{
+			float: left;
+			margin: 10px;
+		}
+		#div2{
+			width: 500px;
+			height: 200px;
+			margin: 0% auto;
+		}
+		#div3{
+			width: 78px;
+			height: 115px;
+			background-image: url(./images/year.png);
+			float: left;
+			margin-top: -20px;
+		}
+		#div4{
+			width: 51px;
+			height: 107px;
+			background-image: url(./images/month.png);
+			float: left;
+			margin-top: -20px;
+		}
+		#div5{
+			width: 51px;
+			height: 107px;
+			background-size: 51px 107px;
+			background-image: url(./images/date.png);
+			float:left;
+			margin-top: -20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function toDou(n){
+			if(n<=9){
+				return '0'+n;
+			}
+			else{
+				return ''+n;
+			}
+		}
+		window.onload=function(){
+			var aDiv1=document.getElementById('div1');
+			var aDiv2=document.getElementById('div2');
+			var aimg1 =aDiv1.getElementsByTagName('img');
+			var aimg2 =aDiv2.getElementsByTagName('img');
+			function tick(){
+				var oDate =new Date();
+				var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+				var ymd=toDou(oDate.getFullYear())+toDou(oDate.getMonth()+1)+toDou(oDate.getDate());
+				for (var i = 0; i < aimg1.length; i++) {
+					aimg1[i].src='images/'+ymd.charAt(i)+'.png';
+
+				}
+				for (var i = 0; i < aimg2.length; i++) {
+					aimg2[i].src='images/'+str.charAt(i)+'.png';
+				}
+			}
+			
+			setInterval(tick,300);
+			tick();
+		};
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<img src="images/0.png">
+		<img src="images/0.png">
+		<img src="images/0.png">
+		<img src="images/0.png">
+		<div id="div3"></div>
+		<img src="images/0.png">
+		<img src="images/0.png">
+		<div id="div4"></div>
+		<img src="images/0.png">
+		<img src="images/0.png">
+		<div id="div5"></div>
+	</div>
+	<div id="div2">
+		<img src="images/0.png">
+		<img src="images/0.png">
+		:
+		<img src="images/0.png">
+		<img src="images/0.png">
+		:
+		<img src="images/0.png">
+		<img src="images/0.png">
+	</div>
+
+</body>
+</html>

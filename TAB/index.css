@@ -1,0 +1,115 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+.TAB_box{
+	width: 100%;
+	height: 330px;
+	margin: 100px auto;
+	float: left;
+}
+
+.TAB_box .TAB{
+	width: 1200px;
+	height: 330px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+.TAB_box .TAB a{
+	width: 398px;
+	height: 43px;
+	float: left;
+	color: #333;
+	display: inline-block;
+	border:1px solid #ccc;
+	background-color: #ddd;
+	font-size: 25px;
+	text-align: center;
+	line-height: 43px;
+}
+.TAB_box .TAB .TAB_active{
+	border-top: 1px solid #c00;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+	font-weight: 600;
+}
+.TAB_box .TAB .TAB_txt_box{
+	width: 1200px;
+	height: 282px;
+	background-color: #fff;
+	display: none;
+	float: left;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box{
+	width: 261px;
+	height: 242px;
+	border:1px solid #ccc;
+	float: left;
+	margin: 10px 5px;
+	padding: 10px;
+	background-color: #fff;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_img_box{
+	width: 260px;
+	height: 160px;
+	position: relative;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_img_box img{
+	width: 260px;
+	height: 160px;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_img_box span{
+	width: 240px;
+	color: #fff;
+	font-size: 14px;
+	background-color: rgba(0,0,0,0.7);
+	float: left;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 10px;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_left{
+	width: 128px;
+	height: 69px;
+	float: left;
+	border:1px solid #ccc;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_left h1{
+	color: #000;
+	font-size: 20px;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+	text-align: center;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_left p{
+	width:100%;
+	height: 30px;
+	color: #929292;
+	text-align: center;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_right{
+	width: 128px;
+	height: 69px;
+	float: left;
+	border:1px solid #ccc;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_right h1{
+	color: #c00;
+	font-size: 20px;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+	text-align: center;
+}
+.TAB_box .TAB .TAB_txt_box .txt_box .txt_right p{
+	width:100%;
+	height: 30px;
+	color: #929292;
+	text-align: center;
+}

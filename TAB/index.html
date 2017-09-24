@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAB</title>
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		$(function() {
+			var aDiv1=$('.TAB_box .TAB');
+			var oA=$('.TAB_box .TAB a');
+			var aDiv2=$('.TAB_box .TAB .TAB_txt_box');
+			oA.mouseover(function(){
+			index=$(this).index();
+			$(this).addClass('TAB_active').siblings().removeClass('TAB_active');
+			aDiv2.eq(index).css("display","block").siblings().css('display','none');
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="TAB_box">
+		<div class="TAB">
+			<a href="javascript:;" class="TAB_active">热销楼盘</a>
+			<a href="javascript:;">品牌地产</a>
+			<a href="javascript:;">全城好房</a>
+			<div class="BOX">
+				<div class="TAB_txt_box" style="display: block;">
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/260x160c.jpg">
+							<span>顺鑫·颐和天璟</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/260x160c.jpg">
+							<span>顺鑫·颐和天璟</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/260x160c.jpg">
+							<span>顺鑫·颐和天璟</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/260x160c.jpg">
+							<span>顺鑫·颐和天璟</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="TAB_txt_box">
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188.jpg">
+							<span>华润·萬象府</span>
+						</div>
+						<div class="txt_left">
+							<h1>顺义</h1>
+							<p>右堤路</p>
+						</div>
+						<div class="txt_right">
+							<h1>山水雅墅</h1>
+							<p>建面108-486㎡</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188.jpg">
+							<span>华润·萬象府</span>
+						</div>
+						<div class="txt_left">
+							<h1>顺义</h1>
+							<p>右堤路</p>
+						</div>
+						<div class="txt_right">
+							<h1>山水雅墅</h1>
+							<p>建面108-486㎡</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188.jpg">
+							<span>华润·萬象府</span>
+						</div>
+						<div class="txt_left">
+							<h1>顺义</h1>
+							<p>右堤路</p>
+						</div>
+						<div class="txt_right">
+							<h1>山水雅墅</h1>
+							<p>建面108-486㎡</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188.jpg">
+							<span>华润·萬象府</span>
+						</div>
+						<div class="txt_left">
+							<h1>顺义</h1>
+							<p>右堤路</p>
+						</div>
+						<div class="txt_right">
+							<h1>山水雅墅</h1>
+							<p>建面108-486㎡</p>
+						</div>
+					</div>
+				</div>
+				<div class="TAB_txt_box">
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188c.jpg">
+							<span>华润·西山墅</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188c.jpg">
+							<span>华润·西山墅</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188c.jpg">
+							<span>华润·西山墅</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+					<div class="txt_box">
+						<div class="txt_img_box">
+							<img src="images/282x188c.jpg">
+							<span>华润·西山墅</span>
+						</div>
+						<div class="txt_left">
+							<h1>海淀</h1>
+							<p>学府树北街</p>
+						</div>
+						<div class="txt_right">
+							<h1>府学大宅</h1>
+							<p>建面185-295</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>	
+	</div>
+</body>
+</html>

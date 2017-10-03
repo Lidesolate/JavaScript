@@ -1,0 +1,145 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #666;
+}
+li{
+	list-style: none;
+}
+img{
+}
+.play{
+	width: 250px;
+	height: 330px;
+	margin: 50px auto;
+	background-color: #999;
+	font-size: 12px;
+}
+.big_pic {
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	background-color: #222;
+	position: relative;
+}	
+.big_pic li{
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+.mark_left{
+	width: 125px;
+	height: 250px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 100;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.mark_right{
+	width: 125px;
+	height: 250px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 100;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.play .big_pic .prev{
+	width: 50px;
+	height: 50px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	z-index: 101;
+	background-color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 70px;
+	font-weight: 600px;
+	text-align: center;
+	line-height: 40px;
+	color: rgba(0,0,0,0.2);
+}
+.play .big_pic .next{
+	width: 50px;
+	height: 50px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	z-index: 101;
+	background-color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 70px;
+	font-weight: 600px;
+	text-align: center;
+	line-height: 40px;
+	color: rgba(0,0,0,0.2);
+}
+.play .big_pic .bg .text{
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	z-index: 202px;
+	color: #fff;
+	font-size: 12px;
+}
+.play .big_pic .bg .length{
+	position: absolute;
+	right: 10px;
+	top:5px;
+	z-index: 102px;
+	color: #fff;
+	font-size: 12px;
+}
+.play .big_pic .bg{
+	width: 250px;
+	height: 25px;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 199;
+}
+.play .small_pic{
+	width: 240px;
+	height: 80px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin: 0px 5px 0px 5px;
+}
+.play .small_pic ul{
+	width: 240px;
+	height: 80px;
+	float: left;
+	background-color: #000;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.play .small_pic ul li{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+.play .small_pic ul li img{
+	width: 80px;
+	height: 80px;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
